@@ -7,23 +7,37 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".99">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="290dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="608dp"
-            android:adjustViewBounds="false"
-            android:cropToPadding="false"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/vowlheader" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="testClicked"
+                android:text="Test" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="practiceClicked"
+                android:text="Practice" />
+        </LinearLayout>
     </LinearLayout>
 
     <ScrollView
@@ -31,7 +45,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="120dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -62,7 +79,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="61dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -71,6 +88,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="aClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ahiragana" />
 
@@ -80,6 +98,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="eClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ehiragana" />
 
@@ -89,6 +108,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="iClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ihiragana" />
 
@@ -98,6 +118,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="oClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ohiragana" />
 
@@ -107,6 +128,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="uClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/uhiragana" />
 
@@ -114,59 +136,64 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="62dp"
                     android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/imageButton6"
-                    android:layout_width="57dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:cropToPadding="false"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/kahiragana" />
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:onClick="kaClicked"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/kahiragana" />
 
-                <ImageButton
-                    android:id="@+id/imageButton7"
-                    android:layout_width="57dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:cropToPadding="false"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/kehiragana" />
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:onClick="keClicked"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/kehiragana" />
 
-                <ImageButton
-                    android:id="@+id/imageButton8"
-                    android:layout_width="57dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:cropToPadding="false"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/kihiragana" />
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:onClick="kiClicked"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/kihiragana" />
 
-                <ImageButton
-                    android:id="@+id/imageButton9"
-                    android:layout_width="57dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:cropToPadding="false"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/kohiragana" />
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:onClick="koClicked"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/kohiragana" />
 
-                <ImageButton
-                    android:id="@+id/imageButton10"
-                    android:layout_width="57dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:cropToPadding="false"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/kuhiragana" />
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:onClick="kuClicked"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/kuhiragana" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="62dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -175,6 +202,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="gaClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/gahiragana" />
 
@@ -184,6 +212,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="geClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/gehiragana" />
 
@@ -193,6 +222,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="giClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/gihiragana" />
 
@@ -202,6 +232,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="goClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/gohiragana" />
 
@@ -211,13 +242,14 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="guClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/guhiragana" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="62dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -226,6 +258,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="saClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/sahiragana" />
 
@@ -235,6 +268,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="seClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/sehiragana" />
 
@@ -244,6 +278,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="shiClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/shihiragana" />
 
@@ -253,6 +288,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="soClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/sohiragana" />
 
@@ -262,13 +298,14 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="suClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/suhiragana" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -277,6 +314,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="zaClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/zahiragana" />
 
@@ -286,6 +324,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="zeClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/zehiragana" />
 
@@ -295,6 +334,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="jiClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/jihiragana" />
 
@@ -304,6 +344,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="zoClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/zohiragana" />
 
@@ -313,13 +354,14 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="zuClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/zuhiragana" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -328,6 +370,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="taClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/tahiragana" />
 
@@ -337,6 +380,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="teClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/tehiragana" />
 
@@ -346,6 +390,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="chiClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/chihiragana" />
 
@@ -355,6 +400,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="toClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/tohiragana" />
 
@@ -364,13 +410,14 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="tsuClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/tsuhiragana" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -379,6 +426,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="daClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/dahiragana" />
 
@@ -388,6 +436,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="deClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/dehiragana" />
 
@@ -397,6 +446,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="jidiClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/jidihiragana" />
 
@@ -406,6 +456,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="doClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/dohiragana" />
 
@@ -415,13 +466,14 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="zuduClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/zuduhiragana" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -430,6 +482,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="naClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nahiragana" />
 
@@ -439,6 +492,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="neClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nehiragana" />
 
@@ -448,6 +502,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="niClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nihiragana" />
 
@@ -457,6 +512,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="noClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nohiragana" />
 
@@ -466,6 +522,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="nuClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nuhiragana" />
 
@@ -473,7 +530,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -482,6 +539,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="haClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/hahiragana" />
 
@@ -491,6 +549,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="heClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/hehiragana" />
 
@@ -500,6 +559,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="hiClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/hihiragana" />
 
@@ -509,6 +569,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="hoClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/hohiragana" />
 
@@ -518,6 +579,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="fuClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/fuhiragana" />
 
@@ -525,7 +587,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -534,6 +596,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="baClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/bahiragana" />
 
@@ -543,6 +606,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="beClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/behiragana" />
 
@@ -552,6 +616,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="biClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/bihiragana" />
 
@@ -561,6 +626,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="boClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/bohiragana" />
 
@@ -570,6 +636,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="buClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/buhiragana" />
 
@@ -577,7 +644,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -586,6 +653,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="paClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/pahiragana" />
 
@@ -595,6 +663,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="peClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/pehiragana" />
 
@@ -604,6 +673,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="piClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/pihiragana" />
 
@@ -613,6 +683,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="poClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/pohiragana" />
 
@@ -622,6 +693,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="puClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/puhiragana" />
 
@@ -629,7 +701,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -638,6 +710,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="maClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/mahiragana" />
 
@@ -647,6 +720,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="meClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/mehiragana" />
 
@@ -656,6 +730,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="miClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/mihiragana" />
 
@@ -665,6 +740,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="moClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/mohiragana" />
 
@@ -674,6 +750,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="muClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/muhiragana" />
 
@@ -681,7 +758,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -690,6 +767,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="yaClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/yahiragana" />
 
@@ -715,6 +793,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="yoClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/yohiragana" />
 
@@ -724,6 +803,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="yuClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/yuhiragana" />
 
@@ -731,7 +811,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -740,6 +820,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="raClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/rahiragana" />
 
@@ -749,6 +830,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="reClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/rehiragana" />
 
@@ -758,6 +840,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="riClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/rihiragana" />
 
@@ -767,6 +850,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="roClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/rohiragana" />
 
@@ -776,6 +860,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="ruClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/ruhiragana" />
 
@@ -783,7 +868,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -792,6 +877,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="waClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/wahiragana" />
 
@@ -817,6 +903,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="woClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/wohiragana" />
 
@@ -832,7 +919,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="70dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -841,6 +928,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:cropToPadding="false"
+                        android:onClick="nClicked"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/nhiragana" />
 
@@ -852,16 +940,29 @@
 
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vowlheader"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:id="@+id/GridTitle"
-        android:layout_width="323dp"
+        android:layout_width="wrap_content"
         android:layout_height="67dp"
         android:gravity="center"
         android:text="Hiragana"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.728"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
