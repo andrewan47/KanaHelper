@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
-public class Practice extends AppCompatActivity {
-    private static final String TAG = "Practice";
+public class Test extends AppCompatActivity {
+    private static final String TAG = "Test";
     private KanaTrace kanaTrace;
     ArrayList<String> background;
     TextView textView;
@@ -21,16 +21,16 @@ public class Practice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practice);
+        setContentView(R.layout.activity_test);
         current = getIntent().getIntExtra("num", 0);
-        background = getIntent().getStringArrayListExtra("setBackground");
+        background = getIntent().getStringArrayListExtra("setName");
         kanaTrace = (KanaTrace) findViewById(R.id.traceView);
-        textView = (TextView) findViewById(R.id.textView3);
+        textView = (TextView) findViewById(R.id.textView4);
 
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         kanaTrace.init(metrics);
-        bg = new Background(background, current, kanaTrace, textView);
+        bg = new Background(background, current, textView);
     }
 
     @Override
@@ -38,14 +38,14 @@ public class Practice extends AppCompatActivity {
         super.onDestroy();
     }
 
-    public void nextClicked(View view) {
+    public void nextTestClicked(View view) {
         if (current < background.size() - 1) {
             current++;
             getIntent().putExtra("num", current);
             finish();
             startActivity(getIntent());
             overridePendingTransition(0, 0);
-            bg = new Background(background, current, kanaTrace, textView);
+            bg = new Background(background, current, textView);
         }
         else {
             Intent main = new Intent(getApplicationContext(), MainActivity.class);
@@ -54,25 +54,36 @@ public class Practice extends AppCompatActivity {
         }
     }
 
-    public void prevClicked(View view) {
+    public void prevTestClicked(View view) {
         if (current > 0) {
             current--;
             getIntent().putExtra("num", current);
             finish();
             startActivity(getIntent());
             overridePendingTransition(0, 0);
-            bg = new Background(background, current, kanaTrace, textView);
+            bg = new Background(background, current, textView);
         }
         else {
-            clearClicked(view);
+            clearTestClicked(view);
         }
     }
 
-    public void clearClicked(View view) {
+    public void clearTestClicked(View view) {
         getIntent().putExtra("num", current);
         finish();
         startActivity(getIntent());
         overridePendingTransition(0, 0);
-        bg = new Background(background, current, kanaTrace, textView);
+        bg = new Background(background, current, textView);
+    }
+
+    public void displayClicked(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch(view.getId()) {
+            case R.id.radioButton:
+                if (checked)
+                    bg = new Background(background, current, kanaTrace, textView);
+                break;
+        }
     }
 }

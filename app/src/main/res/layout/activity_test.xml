@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="displayClicked"
     android:orientation="vertical"
-    tools:context=".Practice">
+    tools:context=".Test">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,8 +20,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025">
 
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Character"
+            android:onClick="displayClicked"/>
+
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -67,29 +75,29 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="prevClicked"
+                android:onClick="prevTestClicked"
                 android:text="Previous" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="clearClicked"
+                android:onClick="clearTestClicked"
                 android:text="Clear" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="nextClicked"
+                android:onClick="nextTestClicked"
                 android:text="Next" />
         </LinearLayout>
     </LinearLayout>

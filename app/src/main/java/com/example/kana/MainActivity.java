@@ -324,7 +324,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void testClicked(View view) {
-        Intent testIntent = new Intent(getApplicationContext(), Practice.class);
+        Intent testIntent = new Intent(getApplicationContext(), Test.class);
         testIntent.putExtra("setName", list);
         startActivity(testIntent);
         finish();

@@ -368,4 +368,226 @@ public class Background {
                 break;
         }
     }
+
+    public Background(ArrayList<String> background, int num, TextView tv) {
+        switch(background.get(num))
+        {
+            case "ahiragana":
+                tv.setText("a (Hiragana)");
+                break;
+            case "ehiragana":
+                tv.setText("e (Hiragana)");
+                break;
+            case "ihiragana":
+                tv.setText("i (Hiragana)");
+                break;
+            case "ohiragana":
+                tv.setText("o (Hiragana)");
+                break;
+            case "uhiragana":
+                tv.setText("u (Hiragana)");
+                break;
+            case "nhiragana":
+                tv.setText("n (Hiragana)");
+                break;
+            case "kahiragana":
+                tv.setText("ka (Hiragana)");
+                break;
+            case "kehiragana":
+                tv.setText("ke (Hiragana)");
+                break;
+            case "kihiragana":
+                tv.setText("ki (Hiragana)");
+                break;
+            case "kohiragana":
+                tv.setText("ko (Hiragana)");
+                break;
+            case "kuhiragana":
+                tv.setText("ku (Hiragana)");
+                break;
+            case "gahiragana":
+                tv.setText("ga (Hiragana)");
+                break;
+            case "gehiragana":
+                tv.setText("ge (Hiragana)");
+                break;
+            case "gihiragana":
+                tv.setText("gi (Hiragana)");
+                break;
+            case "gohiragana":
+                tv.setText("go (Hiragana)");
+                break;
+            case "guhiragana":
+                tv.setText("gu (Hiragana)");
+                break;
+            case "sahiragana":
+                tv.setText("sa (Hiragana)");
+                break;
+            case "sehiragana":
+                tv.setText("se (Hiragana)");
+                break;
+            case "shihiragana":
+                tv.setText("shi (Hiragana)");
+                break;
+            case "sohiragana":
+                tv.setText("so (Hiragana)");
+                break;
+            case "suhiragana":
+                tv.setText("su (Hiragana)");
+                break;
+            case "zahiragana":
+                tv.setText("za (Hiragana)");
+                break;
+            case "zehiragana":
+                tv.setText("ze (Hiragana)");
+                break;
+            case "jihiragana":
+                tv.setText("ji (shi Hiragana)");
+                break;
+            case "zohiragana":
+                tv.setText("zo (Hiragana)");
+                break;
+            case "zuhiragana":
+                tv.setText("zu (su Hiragana)");
+                break;
+            case "tahiragana":
+                tv.setText("ta (Hiragana)");
+                break;
+            case "tehiragana":
+                tv.setText("te (Hiragana)");
+                break;
+            case "chihiragana":
+                tv.setText("chi (Hiragana)");
+                break;
+            case "tohiragana":
+                tv.setText("to (Hiragana)");
+                break;
+            case "tsuhiragana":
+                tv.setText("tsu (Hiragana)");
+                break;
+            case "dahiragana":
+                tv.setText("da (Hiragana)");
+                break;
+            case "dehiragana":
+                tv.setText("de (Hiragana)");
+                break;
+            case "jidihiragana":
+                tv.setText("ji (chi Hiragana)");
+                break;
+            case "dohiragana":
+                tv.setText("do (Hiragana)");
+                break;
+            case "zuduhiragana":
+                tv.setText("zu (tsu Hiragana)");
+                break;
+            case "nahiragana":
+                tv.setText("na (Hiragana)");
+                break;
+            case "nehiragana":
+                tv.setText("ne (Hiragana)");
+                break;
+            case "nihiragana":
+                tv.setText("ni (Hiragana)");
+                break;
+            case "nohiragana":
+                tv.setText("no (Hiragana)");
+                break;
+            case "nuhiragana":
+                tv.setText("nu (Hiragana)");
+                break;
+            case "hahiragana":
+                tv.setText("ha (Hiragana)");
+                break;
+            case "hehiragana":
+                tv.setText("he (Hiragana)");
+                break;
+            case "hihiragana":
+                tv.setText("hi (Hiragana)");
+                break;
+            case "hohiragana":
+                tv.setText("ho (Hiragana)");
+                break;
+            case "fuhiragana":
+                tv.setText("fu (Hiragana)");
+                break;
+            case "bahiragana":
+                tv.setText("ba (Hiragana)");
+                break;
+            case "behiragana":
+                tv.setText("be (Hiragana)");
+                break;
+            case "bihiragana":
+                tv.setText("bi (Hiragana)");
+                break;
+            case "bohiragana":
+                tv.setText("bo (Hiragana)");
+                break;
+            case "buhiragana":
+                tv.setText("bu (Hiragana)");
+                break;
+            case "pahiragana":
+                tv.setText("pa (Hiragana)");
+                break;
+            case "pehiragana":
+                tv.setText("pe (Hiragana)");
+                break;
+            case "pihiragana":
+                tv.setText("pi (Hiragana)");
+                break;
+            case "pohiragana":
+                tv.setText("po (Hiragana)");
+                break;
+            case "puhiragana":
+                tv.setText("pu (Hiragana)");
+                break;
+            case "mahiragana":
+                tv.setText("ma (Hiragana)");
+                break;
+            case "mehiragana":
+                tv.setText("me (Hiragana)");
+                break;
+            case "mihiragana":
+                tv.setText("mi (Hiragana)");
+                break;
+            case "mohiragana":
+                tv.setText("mo (Hiragana)");
+                break;
+            case "muhiragana":
+                tv.setText("mu (Hiragana)");
+                break;
+            case "yahiragana":
+                tv.setText("ya (Hiragana)");
+                break;
+            case "yohiragana":
+                tv.setText("yo (Hiragana)");
+                break;
+            case "yuhiragana":
+                tv.setText("yu (Hiragana)");
+                break;
+            case "rahiragana":
+                tv.setText("ra (Hiragana)");
+                break;
+            case "rehiragana":
+                tv.setText("re (Hiragana)");
+                break;
+            case "rihiragana":
+                tv.setText("ri (Hiragana)");
+                break;
+            case "rohiragana":
+                tv.setText("ro (Hiragana)");
+                break;
+            case "ruhiragana":
+                tv.setText("ru (Hiragana)");
+                break;
+            case "wahiragana":
+                tv.setText("wa (Hiragana)");
+                break;
+            case "wohiragana":
+                tv.setText("wo (Hiragana)");
+                break;
+            default:
+                tv.setText("No List");
+                break;
+        }
+    }
 }

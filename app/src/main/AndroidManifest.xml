@@ -21,6 +21,8 @@
         <activity
             android:name=".Practice"
             />
+        <activity android:name=".Test"
+            />
     </application>
 
 </manifest>
