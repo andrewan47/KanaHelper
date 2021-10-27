@@ -11,6 +11,9 @@ The source code in FingerPath.java and KanaTrace.java were used from Sylvan Saur
 Below is the credit and github repository of where I found the source code that helped me get the program running properly.
 
 Sylvan Saurel
+
 Published in 2017
+
 FingerPath.java and PaintView.java
+
 https://gist.github.com/ssaurel?direction=asc&page=6&sort=created
