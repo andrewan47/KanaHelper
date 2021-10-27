@@ -10,8 +10,6 @@ They will be able to toggle the background and the character will appear just as
 The source code in FingerPath.java and KanaTrace.java were used from Sylvan Saurel's github in order to get the paint tool function working properly in the Android App.
 Below is the credit and github repository of where I found the source code that helped me get the program running properly.
 
-
-
 Sylvan Saurel
 
 Published in 2017
